@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/About.css">
+    <script src="script/index.js" defer></script>
     <title>JOY CONSULTANCY</title>
 </head>
 <body>
     <header>
-        <div class="top-container">
-            <img src="Images/Logo.png" alt="website-logo" width="297" height="57">
-            <div class="navigation">
+        <div class="header">
+            <img src="./Images/kwanzaa.png" alt="website-logo" width="289" height="54">
+            <div class="header__nav">
                 <nav>
-                    <ul>
-                        <li><a href="Home.html">HOME</a></li>
-                        <li><a href="Services.html">SERVICES</a></li>
-                        <li><a href="Staff.html">STAFF</a></li>
-                        <li><a href="Contact.html">CONTACT US</a></li>
-                        <li><a href="About.html">ABOUT US</a></li>
-                        <li><a href="News.html">NEWS</a></li>
+                    <div class="header__nav__toggle-button">
+                        <span class="header__nav__toggle-button__bar"></span>
+                        <span class="header__nav__toggle-button__bar"></span>
+                        <span class="header__nav__toggle-button__bar"></span>
+                    </div >
+                    <ul class="header__nav__nav-links">
+                        <li class="header__nav__nav-links__nav-item"><a href="index.html">HOME</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="Services.html">SERVICES</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="Staff.html">STAFF</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="Contact.html">CONTACT US</a></li>
+                        <li class="header__nav__nav-links__nav-item active-link"><a href="About.html">ABOUT US</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="News.html">NEWS</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
-        <section class="section-1">
+    <main class="main">
+        <section class="main__about">
             <h1>About us</h1>
             <p>
                 Our consulting business is focused on two areas. 
@@ -38,16 +46,16 @@
                 We understand the Ethiopian business environment and what the 
                 pain points are for outside companies.
             </p>
-            <img src="Images/iStock_000071830735_Medium.jpg" alt="a girls playing">
+            <img src="./Images/iStock_000071830735_Medium.jpg" alt="girls playing">
             <p>Joy consultancy works in partnership with its Clients to nurture and support the spirit of innovation, 
                 trust and interdependence that enable organizations to create meaningful and abundant 
                 results for their owners, employees, customers, and the communities they serve.
             </p>
-            <video src="videos/Business.mp4" poster="Images/Thumbnail.png" controls loop></video>
+            <video src="./videos/Business.mp4" poster="./Images/Thumbnail.png"  controls loop ></video>
         </section>
-        <section class="section-2">
+        <section class="main__explain">
             <h2>WHY US</h2>
-            <div class="reason">
+            <div class="main__explain__reason">
                 <div>
                     <p>
                         We go beyond business as usual, so you can too.
@@ -69,24 +77,24 @@
                 </div>
             </div>
             <h2>WANT TO CONTACT US</h2>
-            <div class="bottom-link"><a href="Contact.html">CONTACT US</a></div>
+            <div class="main__bottom-link"><a href="Contact.html">CONTACT US</a></div>
     </section>
     </main>
     <footer>
-        <div id="SITE_FOOTER">
-            <div class="col-1">
-                <span class="telephone"><i><img src="Images/phone_icon.png" alt="phone-icon" width="32" height="32"></i>+251965382262</span>
-                <span class="adress">Mexico,Addis Ababa,Ethiopia</span>
+        <div class="footer">
+            <div class="footer__col-1">
+                <span class="footer__col-1--telephone footer__col-1--span"><i><img src="./Images/phone_icon.png" alt="phone-icon" width="16" height="16"></i>+251965382262</span>
+                <span class="footer__col-1--adress footer__col-1--span"><i><img src="./Images/address-logo.png" alt="address-icon" width="16" height="16"></i>Mexico,Addis Ababa,Ethiopia</span>
             </div>
-            <div class="col-2">
+            <div class="footer__col-2">
                 <div class="copyright">©Joy consultancy 2022</div>
             </div>
-            <div class="col-3">
-                <div class="social-icons">
-                    <i class="fa fa-facebook"><img src="images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
-                    <i class="fa fa-twitter"><img src="images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
-                    <i class="fa fa-linkedin"><img src="images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
-                    <i class="fa fa-instagram"><img src="images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
+            <div class="footer__col-3">
+                <div class="footer__col-3__social-icons">
+                    <i class="footer__col-3__social-icons--facebook   footer__col-3__social-icon"><img src="./images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--twitter    footer__col-3__social-icon"><img src="./images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--linkedin   footer__col-3__social-icon"><img src="./images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--instagram  footer__col-3__social-icon"><img src="./images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
                 </div>
             </div>
         </div>

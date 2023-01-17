@@ -1,0 +1,129 @@
+html{
+    box-sizing:border-box;
+}
+
+*{
+    box-sizing:inherit;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Open sans', verdana ,sans-serif;
+    font-size:1.2em;
+    text-align: justify;  
+    background-color:#f0f0ee;    
+}
+
+.staff{
+    width:90%;
+    margin:auto;
+}
+
+.staff__row{
+    padding-bottom:40px;
+}
+
+.staff__row img {
+    border-radius:6px;
+}
+
+.staff__row-1{
+    display:grid;
+    /* grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2em;
+    text-align: center;
+}
+
+.staff__row-2{
+    display:grid;
+    /* grid-template-columns:repeat(auto-fill, minmax(470px,1fr)); */
+    grid-template-columns:1fr 1fr;
+    text-align: center;
+}
+
+.staff__row-2 p{
+    text-align: justify;
+}
+
+.staff__row-2 img{
+    width:80%;
+    height:auto;
+}
+
+
+.staff__row-3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align: center;
+}
+
+.staff__row-3 img {
+    width:70%;
+    height:auto;
+    margin:auto;
+}
+
+.staff__row__column{
+    margin:auto 0;
+}
+
+.staff__row-1 img{
+    width:100%;
+    height:auto;
+    /* border: #8899AA solid; */
+}
+
+.staff__row img:hover {
+    transform:scale(1.16);
+    transition:0.5s;
+}
+
+.staff__row__column__card p {
+    text-align:center;
+}
+
+@media screen and (max-width:61.065em) {
+    .staff__row-1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .staff__row-3 img{
+        width: 80%;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:50em) {
+    .staff__row-2 {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .staff__row-2 img {
+        width:60%;
+    }
+} 
+
+@media screen and (max-width:39.375em) {
+    .staff__row-1 , .staff__row-3 {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .staff__row img {
+        width:90%;
+    }
+}
+
+@media screen and (min-width:39.376em) and (max-width:61.065em) {
+    .staff__row-1 .col-3{
+        grid-column: 1 / span1;
+    }
+    .staff__row-1 .col-3 img {
+        width:60%;
+        height:auto;
+    }
+
+}
+ 

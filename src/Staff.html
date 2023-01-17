@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/Staff.css">
+    <script src="script/index.js" defer></script>
     <title>JOY CONSULTANCY</title>
 </head>
 <body>
     <header>
-        <div class="top-container">
-            <img src="Images/Logo.png" alt="website-logo" width="297" height="57">
-            <div class="navigation">
+        <div class="header">
+            <img src="Images/kwanzaa.png" alt="website-logo" width="289" height="54">
+            <div class="header__nav">
                 <nav>
-                    <ul>
-                        <li><a href="Home.html">HOME</a></li>
-                        <li><a href="Services.html">SERVICES</a></li>
-                        <li><a href="Staff.html">STAFF</a></li>
-                        <li><a href="Contact.html">CONTACT US</a></li>
-                        <li><a href="About.html">ABOUT US</a></li>
-                        <li><a href="News.html">NEWS</a></li>
+                    <div class="header__nav__toggle-button">
+                        <span class="header__nav__toggle-button__bar"></span>
+                        <span class="header__nav__toggle-button__bar"></span>
+                        <span class="header__nav__toggle-button__bar"></span>
+                    </div>
+                    <ul class="header__nav__nav-links">
+                        <li class="header__nav__nav-links__nav-item"><a href="index.html">HOME</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="Services.html">SERVICES</a></li>
+                        <li class="header__nav__nav-links__nav-item active-link"><a href="Staff.html">STAFF</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="Contact.html">CONTACT US</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="About.html">ABOUT US</a></li>
+                        <li class="header__nav__nav-links__nav-item"><a href="News.html">NEWS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,38 +35,38 @@
     </header>
     <main class="staff">
         <h1>Meet our staff</h1>
-        <div class="row row-1">
-            <div class="column">
-                <div class="card">
-                    <img src="Images/Amadou-Daffe-800x534-1.jpg" alt="Mehari-Alemu-picutre" width="300" height="300">
+        <div class="staff__row-1 staff__row">
+            <div class="staff__row__column col-1">
+                <div class="staff__row__column__card">
+                    <img src="Images/Amadou-Daffe-800x534-1.jpg" alt="Mehari-Alemu-picutre" width="350" height="350">
                     <p class="name">Mehari-Alemu</p>
                     <p>Principal Consultant</p>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="Images/Solomon.png" alt="Steve-jacob-pictre" width="300" height="300">
+            <div class="staff__row__column col-2">
+                <div class="staff__row__column__card">
+                    <img src="Images/Solomon.jpg" alt="Steve-jacob-pictre" width="350" height="350">
                     <p class="name">Solomon Tilahun</p>
                     <p>Finance and Administration</p>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="Images/yoftahe.jpg" alt="picture of Yoftahe Abate" width="300" height="300">
+            <div class="staff__row__column col-3">
+                <div class="staff__row__column__card">
+                    <img src="Images/yoftahe.jpg" alt="picture of Yoftahe Abate" width="350" height="350">
                     <p class="name">Yoftahe Abate</p>
                     <p>Principal Consultant</p>
                 </div>
             </div>
         </div>
-        <div class="row row-2">
-            <div class="column">
-                <div class="card">
-                    <img src="Images/Alex.png" alt="picture of Alex Mahoon" width="300" height="300">
+        <div class="staff__row-2 staff__row">
+            <div class="staff__row__column col-1">
+                <div class="staff__row__column__card">
+                    <img src="Images/Alex.jpg" alt="picture of Alex Mahoon" width="398" height="300">
                     <p>Alex Mahoon</p>
                     <p>Manager</p>
                 </div>
             </div>
-            <div class="column">
+            <div class="staff__row__column col-2">
                 <p>It's our life's work. We will spend more time working on our mission 
                     rather than our families. So we are dedicated to  building a family of 
                     remarkable people with ambition to drive change. And we  care about each other .
@@ -71,34 +79,38 @@
                 </audio>
             </div>
         </div>
-        <div class="row row-3">
-            <div class="column">
-                <img src="Images/bayelign.jpg" alt="Bayelign-photo" width="300" height="300">
-                <p class="name">Bayelign Wasyhun</p>
-                <p>Distribution Manager</p>
+        <div class="staff__row-3 staff__row col-1">
+            <div class="staff__row__column">
+                <div class="staff__row__column__card">
+                    <img src="Images/bayelign.jpg" alt="Bayelign-photo" width="350" height="350">
+                    <p class="name">Bayelign Wasyhun</p>
+                    <p>Distribution Manager</p>
+                </div>
             </div>
-            <div class="column">
-                <img src="Images/iman.jpg" alt="Iman-photo" width="300" height="300">
-                <p class="name">Iman Abrha</p>
-                <p>Finance Consultant</p>
+            <div class="staff__row__column col-2">
+                <div class="staff__row__column__card">
+                    <img src="Images/iman.jpg" alt="Iman-photo" width="350" height="350">
+                    <p class="name">Iman Abrha</p>
+                    <p>Finance Consultant</p>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="SITE_FOOTER">
-            <div class="col-1">
-                <span class="telephone"><i><img src="Images/phone_icon.png" alt="phone-icon" width="32" height="32"></i>+251965382262</span>
-                <span class="adress">Mexico,Addis Ababa,Ethiopia</span>
+        <div class="footer">
+            <div class="footer__col-1">
+                <span class="footer__col-1--telephone footer__col-1--span"><i><img src="Images/phone_icon.png" alt="phone-icon" width="16" height="16"></i>+251965382262</span>
+                <span class="footer__col-1--adress footer__col-1--span"><i><img src="Images/address-logo.png" alt="address-icon" width="16" height="16"></i>Mexico,Addis Ababa,Ethiopia</span>
             </div>
-            <div class="col-2">
+            <div class="footer__col-2">
                 <div class="copyright">©Joy consultancy 2022</div>
             </div>
-            <div class="col-3">
-                <div class="social-icons">
-                    <i class="fa fa-facebook"><img src="images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
-                    <i class="fa fa-twitter"><img src="images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
-                    <i class="fa fa-linkedin"><img src="images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
-                    <i class="fa fa-instagram"><img src="images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
+            <div class="footer__col-3">
+                <div class="footer__col-3__social-icons">
+                    <i class="footer__col-3__social-icons--facebook   footer__col-3__social-icon"><img src="images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--twitter    footer__col-3__social-icon"><img src="images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--linkedin   footer__col-3__social-icon"><img src="images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
+                    <i class="footer__col-3__social-icons--instagram  footer__col-3__social-icon"><img src="images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
                 </div>
             </div>
         </div>

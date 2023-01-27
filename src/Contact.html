@@ -45,14 +45,14 @@
                     <h1 class="text-center display-4 fw-bold display-md-3">CONTACT US</h1>
                     <form class="was-validated" id="form" action="mailto:dagitensay@gmail.com" onsubmit="return validateForm()" name="myForm" method="post" encoding="text/plain">
                         <label class="form-label"  for="first-name">First Name</label><br>
-                        <input class="form-control-sm border-0 w-100" type="text" id="first-name" name="first-name" placeholder="First Name" autofocus><br>
+                        <input class="form-control-sm border-0 w-100" type="text" id="first-name" name="first-name" placeholder="First Name" autocomplete="name" autofocus ><br>
                         <span id="name-error" class="d-block"></span>
                         <label class="form-label" for="last-name">Last Name</label><br>
-                        <input class="form-control-sm border-0 w-100" type="text" id="last-name" name="last-name" placeholder="Last Name"><br>
+                        <input class="form-control-sm border-0 w-100" type="text" id="last-name" name="last-name" placeholder="Last Name" autocomplete="last-name"><br>
                         <label class="form-label" for="email">Email</label><br>
-                        <input class="form-control-sm border-0 w-100" type="text" id="email" name="email" placeholder="Email"><br>
+                        <input class="form-control-sm border-0 w-100" type="text" id="email" name="email" placeholder="Email" autocomplete="email"><br>
                         <label class="form-label" for="message">Message</label><br>
-                        <textarea class="form-control-sm border-0 w-100" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                        <textarea class="form-control-sm border-0 w-100" name="message" id="message" cols="30" rows="10" placeholder="Message" autocomplete="message"></textarea><br>
                         <input class="btn btn-dark btn w-100" type="submit" value="submit">
                         <span id="form-error"></span>
                     </form>

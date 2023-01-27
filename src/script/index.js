@@ -1,11 +1,3 @@
-// toggle button handler
-
-const toggleButton = document.getElementsByClassName("header__nav__toggle-button")[0]
-const navLinks = document.getElementsByClassName("header__nav__nav-links")[0]
-toggleButton.addEventListener('click', function(){
-    navLinks.classList.toggle('active');
-})
-
 // form validation
 
 var errorMessage = document.getElementById("form-error");

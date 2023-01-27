@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
-    <link rel="stylesheet" href="css/headerFooter.css">
+    <!-- <link rel="stylesheet" href="css/headerFooter.css">
     <link rel="stylesheet" href="css/About.css">
-    <script src="script/index.js" defer></script>
+    <script src="script/index.js" defer></script> -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <title>JOY CONSULTANCY</title>
 </head>
-<body>
+<body class="bg-light">
     <header>
-        <div class="header">
-            <img src="./Images/kwanzaa.png" alt="website-logo" width="289" height="54">
+        <div style="background-color:#005078">
             <div class="header__nav">
-                <nav>
-                    <div class="header__nav__toggle-button">
-                        <span class="header__nav__toggle-button__bar"></span>
-                        <span class="header__nav__toggle-button__bar"></span>
-                        <span class="header__nav__toggle-button__bar"></span>
-                    </div >
-                    <ul class="header__nav__nav-links">
-                        <li class="header__nav__nav-links__nav-item"><a href="index.html">HOME</a></li>
-                        <li class="header__nav__nav-links__nav-item"><a href="Services.html">SERVICES</a></li>
-                        <li class="header__nav__nav-links__nav-item"><a href="Staff.html">STAFF</a></li>
-                        <li class="header__nav__nav-links__nav-item"><a href="Contact.html">CONTACT US</a></li>
-                        <li class="header__nav__nav-links__nav-item active-link"><a href="About.html">ABOUT US</a></li>
-                        <li class="header__nav__nav-links__nav-item"><a href="News.html">NEWS</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark py-4">
+                    <img class="navbar-brand ps-3" src="./Images/kwanzaa.png" alt="website-logo" width="289" height="54">
+                    <div class="navbar-toggler me-1 mx-md-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span></span>
+                        <span></span>     
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ms-auto ps-5 nav-pills">
+                            <li class="nav-item me-4"><a class="nav-link text-light" href="index.html">HOME</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-light" href="Services.html">SERVICES</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-light" href="Staff.html">STAFF</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-light" href="Contact.html">CONTACT US</a></li>
+                            <li class="nav-item me-4 border-bottom"><a class="nav-link text-light fw-bold" href="About.html">ABOUT US</a></li>
+                            <li class="nav-item me-4"><a class="nav-link text-light" href="News.html">NEWS</a></li>
+                        </ul>
+                </div>
                 </nav>
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="main__about">
-            <h1>About us</h1>
+    <main class="p-5 fs-5" style="text-align:justify">
+        <section class="">
+            <h1 class="pb-3">About us</h1>
             <p>
                 Our consulting business is focused on two areas. 
                 First, we aim to elevate the operations of Ethiopian 
@@ -46,16 +49,16 @@
                 We understand the Ethiopian business environment and what the 
                 pain points are for outside companies.
             </p>
-            <img src="./Images/iStock_000071830735_Medium.jpg" alt="girls playing">
+            <img class="w-100 h-auto my-3" src="./Images/iStock_000071830735_Medium.jpg" alt="girls playing">
             <p>Joy consultancy works in partnership with its Clients to nurture and support the spirit of innovation, 
                 trust and interdependence that enable organizations to create meaningful and abundant 
                 results for their owners, employees, customers, and the communities they serve.
             </p>
-            <video src="./videos/Business.mp4" poster="./Images/Thumbnail.png"  controls loop ></video>
+            <video class="w-100 h-50 embed-responsive-item my-3" src="./videos/Business.mp4" poster="./Images/Thumbnail.png"  controls loop ></video>
         </section>
-        <section class="main__explain">
+        <section class="">
             <h2>WHY US</h2>
-            <div class="main__explain__reason">
+            <div class="">
                 <div>
                     <p>
                         We go beyond business as usual, so you can too.
@@ -76,28 +79,29 @@
                     </p>
                 </div>
             </div>
-            <h2>WANT TO CONTACT US</h2>
-            <div class="main__bottom-link"><a href="Contact.html">CONTACT US</a></div>
+            <h2 class="py-3">WANT TO CONTACT US</h2>
+            <div><a class="btn btn-dark btn-lg" href="Contact.html">CONTACT US</a></div>
     </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="footer__col-1">
-                <span class="footer__col-1--telephone footer__col-1--span"><i><img src="Images/phone_icon.png" alt="phone-icon" width="16" height="16"></i>+251965382262</span>
-                <span class="footer__col-1--adress footer__col-1--span"><i><img src="Images/address-logo.png" alt="address-icon" width="16" height="16"></i>Mexico,Addis Ababa,Ethiopia</span>
+    <footer class="container-fluid text-light py-5" style="background-color:#005078">
+        <div class="row">
+            <div class="col-lg-4  col-md-4  fps-5 row text-center pb-2">
+                <span class="col-lg-5 pb-2"><i><img src="Images/phone_icon.png" alt="phone-icon" width="16" height="16"></i>+251965382262</span>
+                <span class="col-lg-7 pb-xs-3"><i><img src="Images/address-logo.png" alt="address-icon" width="16" height="16"></i>Mexico,Addis Ababa,Ethiopia</span>
             </div>
-            <div class="footer__col-2">
-                <div class="copyright">©Joy consultancy 2022</div>
+            <div class="col-lg-4 col-md-5 pb-2">
+                <div class="text-center pb-3">©Joy consultancy 2022</div>
             </div>
-            <div class="footer__col-3">
-                <div class="footer__col-3__social-icons">
-                    <i class="footer__col-3__social-icons--facebook   footer__col-3__social-icon"><img src="./Images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
-                    <i class="footer__col-3__social-icons--twitter    footer__col-3__social-icon"><img src="./Images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
-                    <i class="footer__col-3__social-icons--linkedin   footer__col-3__social-icon"><img src="./Images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
-                    <i class="footer__col-3__social-icons--instagram  footer__col-3__social-icon"><img src="./Images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
+            <div class="col-lg-4 col-md-3 pb-2">
+                <div class="text-center">
+                    <i class="px-3"><img src="./Images/facebook-logo.png" alt="facebook-icon" width="32" height="32"></i>
+                    <i class="px-3"><img src="./Images/twitter-logo.png" alt="twitter-icon" width="32" height="32"></i>
+                    <i class="px-3"><img src="./Images/linkedin-logo.png" alt="linkedIn-icon" width="32" height="32"></i>
+                    <i class="px-3"><img src="./Images/instagram-icon.png" alt="instagram-icon" width="32" height="32"></i>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js" defer></script>
 </body>
 </html>
